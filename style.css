@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+:root{
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(images/bg-mobile.svg);
+    background-color: var(--violet);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    font: 16px;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+.socials i{
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    object-fit: cover;
+    z-index: 1000;
+}
+main{
+    width: 80%;
+    margin: 2rem auto;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+.desc{
+    text-align: center;
+    color: #fff;
+}
+.desc p{
+    line-height: 1.7rem;
+    margin: 1rem 0;
+}
+.desc button{
+    padding: .7rem 4.5rem;
+    border: 0;
+    border-radius: 20px;
+    color: var(--violet);
+    box-shadow: 0 10px 10px rgba(0,0,0,.2);
+}
+.desc button:hover{
+    background-color: var(--soft-magenta);
+    color: #fff;
+}
+.logo img{
+    width: 120px;
+}
+.content img{
+    width: 100%;
+    display: block;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socials i{
+    margin: 0 .3rem;
+}
+.socials i:hover{
+    border: 1px solid var(--soft-magenta);
+    color: var(--soft-magenta);
+}
+
+
+@media only screen and (min-width: 900px){
+    main{
+        max-width: 1000px;
+    }
+    .content{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 2rem;
+
+    }
+    .content img{
+        max-width: 500px;
+    }
+    .content .desc{
+        
+        text-align: left;
+        min-width: 300px;
+    }
+    .desc h1{
+        font-size: 2.5rem;
+    }
+    footer{
+        justify-content: flex-end;
+    }
+    .socials i{
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    .socials i:nth-child(1){
+        padding: 1rem 1.3rem;
+    }
+}
